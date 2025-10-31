@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
 
-class MobHomeScreen extends StatelessWidget {
-  const MobHomeScreen({super.key});
+class DeskLoginScreen extends StatelessWidget {
+  const DeskLoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

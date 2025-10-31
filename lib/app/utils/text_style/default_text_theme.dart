@@ -78,12 +78,12 @@ class DefaultTextTheme {
   }
 
   //Size 36
-  static TextStyle headline1Bold(BuildContext context, {Color? color}) {
+  static TextStyle headline1Bold(BuildContext context, {Color? color, double? size}) {
     return TextStyle(
       fontFamily: AppAssets.plusJakartaSans,
       fontWeight: FontWeight.w800,
       // Bold
-      fontSize: 36,
+      fontSize: size?? 36,
       color: color ?? textBlack,
       letterSpacing: spacing,
     );
@@ -536,7 +536,7 @@ class DefaultTextTheme {
       fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
-      fontSize: Responsive.isSmallMobile(context) ? 10 : size ?? 12,
+      fontSize:  size ?? 13,
       overflow: overflow,
       color: color ?? textBlack,
       letterSpacing: spacing,

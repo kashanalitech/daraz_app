@@ -46,6 +46,7 @@ const Color peach =Color(0xffF7F0C6);
 final Color background = Colors.white;
 const Color black = Colors.black;
 const Color white = Color(0xffFFFFFF);
+const Color facebookBorder = Color(0xff1877F2);
 final Color red = Colors.red;
 const Color primary = Color(0xffF582AE);
 final Color pieColors1 = Color(0xff6E032C);

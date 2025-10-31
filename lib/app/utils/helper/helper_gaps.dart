@@ -38,7 +38,7 @@ const gapW24 = SizedBox(width: 24);
 
 const divider = Divider(
   color: fieldBorderColor,
-  thickness: 0.6,
+  thickness: 0.55,
 );
 
 const verticalDivider = VerticalDivider(
