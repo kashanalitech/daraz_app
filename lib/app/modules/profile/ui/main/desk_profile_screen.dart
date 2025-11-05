@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MobSavedScreen extends StatelessWidget {
-  const MobSavedScreen({super.key});
+class DeskProfileScreen extends StatelessWidget {
+  const DeskProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

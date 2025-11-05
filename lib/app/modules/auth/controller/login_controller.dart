@@ -8,7 +8,7 @@ class  LoginController extends GetxController{
   final passwordController = TextEditingController().obs;
 
   void goToHome() {
-    Get.offAllNamed(Routes.home); // ✅ Navigate & clear history
+    Get.offAllNamed(Routes.navBar); // ✅ Navigate & clear history
   }
   void goToForgotPassword() {
     Get.toNamed(Routes.forgotPassword); // ✅ Navigate & clear history
