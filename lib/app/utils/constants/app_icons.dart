@@ -44,4 +44,19 @@ class AppIcons {
   static const String whatsappIcon = '$basePath/whatsapp_icon.svg';
   static const String googleLogo = '$basePath/google_logo.svg';
   static const String facebookLogo = '$basePath/facebook_logo.svg';
+  static const String fitNavyShirt = '$basePath/fit_navy.png';
+  static const String brownJeans = '$basePath/brown_jeans.jpeg';
+  static const String blackShoes = '$basePath/black_shoes.jpeg';
+  static const String brownShoes = '$basePath/brown_shoes.jpeg';
+  static const String yellowShoes = '$basePath/yellow_shoes.jpeg';
+  static const String darkBlueShoes = '$basePath/darkblue_shoes.jpeg';
+  static const String orangeShoes = '$basePath/orange_shoes.jpeg';
+  static const String blueShoes = '$basePath/blue_shoes.jpeg';
+  static const String shoesOne = '$basePath/shoes_one.jpeg';
+  static const String greyJeans = '$basePath/grey_jeans.jpeg';
+  static const String redJeans = '$basePath/red_jeans.jpeg';
+  static const String yellowJeans = '$basePath/yellow_jeans.jpeg';
+  static const String fitGreen = '$basePath/fit_green.png';
+  static const String fitBlue = '$basePath/fit_blue.png';
+  static const String fitBlack = '$basePath/fit_black.png';
 }

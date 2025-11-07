@@ -12,9 +12,11 @@ class MainForgotPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
 
-    return Scaffold(
+    return
+      Scaffold(
       backgroundColor: white,
-      body: Column(
+      body:
+      Column(
         children: [
           isMobile ? MobForgotPasswordScreen() : DeskForgotPasswordScreen(),
         ],

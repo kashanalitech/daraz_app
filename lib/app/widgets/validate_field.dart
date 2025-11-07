@@ -26,6 +26,9 @@ class ValidatedField extends StatefulWidget {
   final void Function(String)? onChanged;
   final bool readOnly;
 
+  /// 👇 ye new prop add ki gayi
+  final bool isIconValidation;
+
   const ValidatedField({
     Key? key,
     required this.labelText,
@@ -45,6 +48,7 @@ class ValidatedField extends StatefulWidget {
     this.suffixIcon,
     this.onChanged,
     this.readOnly = false,
+    this.isIconValidation = true, // default true
   }) : super(key: key);
 
   @override
@@ -55,7 +59,7 @@ class _ValidatedFieldState extends State<ValidatedField> {
   String? _errorText;
   bool _isValid = false;
   bool _touched = false;
-  bool _obscure = true; // 👁️ for password toggle
+  bool _obscure = true;
 
   void _validate(String value) {
     setState(() {
@@ -117,24 +121,24 @@ class _ValidatedFieldState extends State<ValidatedField> {
 
   @override
   Widget build(BuildContext context) {
-    Color borderColor;
+    Color borderColor = Colors.grey.shade300;
     Widget? suffix;
 
-    if (!_touched) {
-      borderColor = Colors.grey.shade300;
-    } else if (_isValid) {
-      borderColor = Colors.green;
-      suffix = widget.successIcon != null
-          ? SvgPicture.asset(widget.successIcon!, color: Colors.green, height: 18)
-          : const Icon(Icons.check_circle, color: Colors.green, size: 20);
-    } else {
-      borderColor = Colors.red;
-      suffix = widget.errorIcon != null
-          ? SvgPicture.asset(widget.errorIcon!, color: Colors.red, height: 18)
-          : const Icon(Icons.cancel, color: Colors.red, size: 20);
+    // 👇 border & icon validation only if enabled
+    if (widget.isIconValidation && _touched) {
+      if (_isValid) {
+        borderColor = Colors.green;
+        suffix = widget.successIcon != null
+            ? SvgPicture.asset(widget.successIcon!, color: Colors.green, height: 18)
+            : const Icon(Icons.check_circle, color: Colors.green, size: 20);
+      } else {
+        borderColor = Colors.red;
+        suffix = widget.errorIcon != null
+            ? SvgPicture.asset(widget.errorIcon!, color: Colors.red, height: 18)
+            : const Icon(Icons.cancel, color: Colors.red, size: 20);
+      }
     }
 
-    // 👁️ Add show/hide toggle for password fields
     final isPasswordField =
         widget.obscureText || widget.keyboardType == TextInputType.visiblePassword;
 
@@ -142,11 +146,12 @@ class _ValidatedFieldState extends State<ValidatedField> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(widget.labelText,
-            style: DefaultTextTheme.subtitle1(context,color: mediumBlack),),
+            style: DefaultTextTheme.subtitle1(context, color: mediumBlack)),
         const SizedBox(height: 6),
         SizedBox(
           height: widget.height,
-          child: TextFormField(style: const TextStyle(color: Colors.black, fontSize: 13),
+          child: TextFormField(
+            style: const TextStyle(color: Colors.black, fontSize: 13),
             controller: widget.controller,
             keyboardType: widget.keyboardType,
             obscureText: isPasswordField ? _obscure : false,
@@ -160,7 +165,7 @@ class _ValidatedFieldState extends State<ValidatedField> {
                   ? Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  if (_touched)
+                  if (widget.isIconValidation && _touched)
                     Padding(
                       padding: const EdgeInsets.only(right: 4),
                       child: suffix,
@@ -171,13 +176,12 @@ class _ValidatedFieldState extends State<ValidatedField> {
                       color: Colors.grey,
                       size: 20,
                     ),
-                    onPressed: () => setState(() {
-                      _obscure = !_obscure;
-                    }),
+                    onPressed: () =>
+                        setState(() => _obscure = !_obscure),
                   ),
                 ],
               )
-                  : suffix,
+                  : (widget.isIconValidation ? suffix : null),
               contentPadding:
               const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
               enabledBorder: OutlineInputBorder(
@@ -191,7 +195,7 @@ class _ValidatedFieldState extends State<ValidatedField> {
             ),
           ),
         ),
-        if (_errorText != null)
+        if (widget.isIconValidation && _errorText != null)
           Padding(
             padding: const EdgeInsets.only(top: 4, left: 4),
             child: Text(
@@ -203,4 +207,6 @@ class _ValidatedFieldState extends State<ValidatedField> {
     );
   }
 }
+
+
 

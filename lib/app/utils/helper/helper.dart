@@ -133,3 +133,20 @@ class Helper {
   //   }
   // }
 }
+
+class RadioSelectionManager {
+  static int _selectedValue = 1; // default to first radio button
+
+  /// Set the selected value
+  static void setSelectedValue(int value) {
+    _selectedValue = value;
+    print("Manager updated to value: $value");
+  }
+
+  /// Get the selected value
+  static int getSelectedValue() {
+    print("Current manager value: $_selectedValue");
+    return _selectedValue;
+  }
+}
+

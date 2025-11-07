@@ -82,6 +82,8 @@ class AppPages {
       page: () => const NavbarShell(),
       binding: BindingsBuilder(() {
         Get.put(NavBarController());
+        Get.put(HomeController()); // ✅ Add this line
+
       }),
     ),
 
