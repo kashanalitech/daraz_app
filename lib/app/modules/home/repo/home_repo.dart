@@ -22,7 +22,7 @@ class HomeRepo {
         case 0:
           return await getProductDummyData();
         case 1:
-          return await getProductApi();
+          return await getProductDummyData();
 
         default:
           throw Exception("Invalid data source selected");

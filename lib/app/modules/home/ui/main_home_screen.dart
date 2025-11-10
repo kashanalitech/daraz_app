@@ -10,10 +10,14 @@ class MainHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isMobile = Responsive.isMobile(context);
-    return Scaffold(
-      backgroundColor: white,
-      body: Column(children: [isMobile ? MobHomeScreen() : DeskHomeScreen()]),
+    return Scaffold(backgroundColor: white, body: _buildBody(context));
+  }
+
+  Widget _buildBody(BuildContext context) {
+    return Responsive(
+      mobile: MobHomeScreen(),
+      desktop: DeskHomeScreen(),
+      tablet: DeskHomeScreen(),
     );
   }
 }

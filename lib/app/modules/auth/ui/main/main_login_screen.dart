@@ -11,13 +11,24 @@ class MainLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
-    return  Scaffold(
-      backgroundColor: white,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [isMobile ? MobLoginScreen() : DeskLoginScreen()],
-        ),
-      ),
+
+    return Scaffold(backgroundColor: white, body: _buildBody(context));
+  }
+
+  Widget _buildBody(BuildContext context) {
+    return Responsive(
+      mobile: MobLoginScreen(),
+      desktop: DeskLoginScreen(),
+      tablet: DeskLoginScreen(),
     );
   }
+  //   return  Scaffold(
+  //     backgroundColor: white,
+  //     body: SingleChildScrollView(
+  //       child: Column(
+  //         children: [isMobile ? MobLoginScreen() : DeskLoginScreen()],
+  //       ),
+  //     ),
+  //   );
+  // }
 }

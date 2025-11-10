@@ -11,13 +11,14 @@ class MainResetPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
-    return Scaffold(
-      backgroundColor: white,
-      body: Column(
-        children: [
-          isMobile ? MobResetPasswordScreen() : DeskResetPasswordScreen(),
-        ],
-      ),
+    return Scaffold(backgroundColor: white, body: _buildBody(context));
+  }
+
+  Widget _buildBody(BuildContext context) {
+    return Responsive(
+      mobile: MobResetPasswordScreen(),
+      desktop: DeskResetPasswordScreen(),
+      tablet: DeskResetPasswordScreen(),
     );
   }
 }

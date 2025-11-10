@@ -7,6 +7,7 @@ class ProductModel {
   int? id;
   String? name;
   String? description;
+  bool? isFavourite;
   double? price;
   String? image;
   String? fitType; // "Regular Fit", "Slim Fit", etc.
@@ -23,6 +24,7 @@ class ProductModel {
     this.price,
     this.image,
     this.fitType,
+    this.isFavourite,
     this.sizes,
     this.reviews,
     this.rating,

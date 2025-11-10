@@ -7,6 +7,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // setupLocator();
+  await Locator.init();
+
 
   runApp(const MyApp());
 }

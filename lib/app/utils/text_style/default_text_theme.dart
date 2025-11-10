@@ -80,7 +80,7 @@ class DefaultTextTheme {
   //Size 36
   static TextStyle headline1Bold(BuildContext context, {Color? color, double? size}) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: FontWeight.w800,
       // Bold
       fontSize: size?? 36,
@@ -91,7 +91,7 @@ class DefaultTextTheme {
 
   static TextStyle headline1(BuildContext context, {Color? color}) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: FontWeight.w600,
       fontSize: 36,
       color: color ?? textBlack,
@@ -102,7 +102,7 @@ class DefaultTextTheme {
   // Headline 2: Regular 400
   // static TextStyle headline2(BuildContext context, {Color? color}) {
   //   return  TextStyle(
-  //     fontFamily: AppAssets.plusJakartaSans,
+  //     // fontFamily: AppAssets.plusJakartaSans,
   //     fontWeight: FontWeight.w400,
   //     // Regular
   //     fontSize: 36,
@@ -120,7 +120,7 @@ class DefaultTextTheme {
     Color? color,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: FontWeight.w600,
       // Medium
       fontSize: Responsive.isSmallMobile(context) ? 25 : 32,
@@ -135,7 +135,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: Responsive.isSmallMobile(context) ? 25 : 32,
@@ -151,7 +151,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 28,
@@ -166,7 +166,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 28,
@@ -182,7 +182,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 28,
@@ -197,7 +197,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 28,
@@ -213,7 +213,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 24,
@@ -228,7 +228,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 24,
@@ -245,7 +245,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 22,
@@ -260,7 +260,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // SemiBold
       fontSize: 22,
@@ -277,7 +277,7 @@ class DefaultTextTheme {
     double? letterSpacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Bold
       fontSize: Responsive.isSmallMobile(context) ? 15 : 20,
@@ -293,7 +293,7 @@ class DefaultTextTheme {
     double? letterSpacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Bold
       fontSize: Responsive.isSmallMobile(context) ? 15 : 20,
@@ -310,7 +310,7 @@ class DefaultTextTheme {
     double? letterSpacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: 18,
@@ -326,7 +326,7 @@ class DefaultTextTheme {
     double? letterSpacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: 18,
@@ -342,7 +342,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: 16,
@@ -357,7 +357,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: 16,
@@ -373,7 +373,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w800,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: 15,
@@ -388,7 +388,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w700,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: 15,
@@ -407,7 +407,7 @@ class DefaultTextTheme {
     double? fontSize,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: fontSize ?? 14,
@@ -426,7 +426,7 @@ class DefaultTextTheme {
     double? fontSize,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: fontSize ?? 13,
@@ -442,7 +442,7 @@ class DefaultTextTheme {
   //   FontWeight fontWeight = FontWeight.w600,
   // }) {
   //   return TextStyle(
-  //     fontFamily: AppAssets.plusJakartaSans,
+  //     // fontFamily: AppAssets.plusJakartaSans,
   //     // SemiBold font
   //     fontWeight: fontWeight,
   //     fontSize: 20,
@@ -458,7 +458,7 @@ class DefaultTextTheme {
   //   FontWeight fontWeight = FontWeight.w600,
   // }) {
   //   return TextStyle(
-  //     fontFamily: AppAssets.plusJakartaSans,
+  //     // fontFamily: AppAssets.plusJakartaSans,
   //     // SemiBold font
   //     fontWeight: fontWeight,
   //     fontSize: 22,
@@ -474,7 +474,7 @@ class DefaultTextTheme {
   //   FontWeight fontWeight = FontWeight.w600,
   // }) {
   //   return TextStyle(
-  //     fontFamily: AppAssets.plusJakartaSans,
+  //     // fontFamily: AppAssets.plusJakartaSans,
   //     // SemiBold font
   //     fontWeight: fontWeight,
   //     fontSize: 26,
@@ -490,7 +490,7 @@ class DefaultTextTheme {
   //   FontWeight? fontWeight = FontWeight.w700,
   // }) {
   //   return TextStyle(
-  //     fontFamily: AppAssets.plusJakartaSans,
+  //     // fontFamily: AppAssets.plusJakartaSans,
   //     // Bold font
   //     fontWeight: fontWeight,
   //     fontSize: Responsive.isSmallMobile(context) ? 15 : 16,
@@ -503,7 +503,7 @@ class DefaultTextTheme {
   static TextStyle bodyText2(BuildContext context,
       {Color? color, FontWeight? fontWeight}) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w800,
       // Bold
       fontSize: 14,
@@ -515,7 +515,7 @@ class DefaultTextTheme {
   static TextStyle bodyText3(BuildContext context,
       {Color? color, FontWeight? fontWeight}) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w500,
       // Bold
       fontSize: 13,
@@ -533,7 +533,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize:  size ?? 13,
@@ -549,7 +549,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w800,
       // Bold
       fontSize: 12,
@@ -566,7 +566,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w500,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Medium
       fontSize: Responsive.isSmallMobile(context) ? 10 : size ?? 12,
@@ -584,7 +584,7 @@ class DefaultTextTheme {
     FontWeight fontWeight = FontWeight.w700,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight,
       // Bold
       fontSize: 12,
@@ -603,7 +603,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Medium
       fontSize: 11,
@@ -621,7 +621,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w500,
       // Medium
       fontSize: 11,
@@ -639,7 +639,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w700,
       // Medium
       fontSize: 11,
@@ -659,7 +659,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Medium
       fontSize: 10,
@@ -679,7 +679,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w500,
       // Medium
       fontSize: 10,
@@ -696,7 +696,7 @@ class DefaultTextTheme {
     Color? color,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: FontWeight.w700,
       // Bold
       fontSize: 10,
@@ -711,7 +711,7 @@ class DefaultTextTheme {
   static TextStyle captionUnderline(BuildContext context,
       {Color? color, FontWeight? fontWeight, double? size}) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w500,
       // Medium
       fontSize: size ?? 10,
@@ -728,7 +728,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Medium
       fontSize: 9,
@@ -743,7 +743,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w800,
       // Medium
       fontSize: 9,
@@ -758,7 +758,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w500,
       // Medium
       fontSize: 9,
@@ -774,7 +774,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Medium
       fontSize: 8,
@@ -789,7 +789,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w800,
       // Medium
       fontSize: 8,
@@ -805,7 +805,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w700,
       // Bold
       fontSize: Responsive.isMobile(context) ? 8 : 10,
@@ -820,7 +820,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w800,
       // Bold
       fontSize: 8,
@@ -836,7 +836,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Bold
       fontSize: size ?? 11.0,
@@ -853,7 +853,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Medium
       fontSize: 10,
@@ -869,7 +869,7 @@ class DefaultTextTheme {
     FontWeight? fontWeight,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w700,
       // Bold
       fontSize: size ?? 12.0,
@@ -886,7 +886,7 @@ class DefaultTextTheme {
     double? spacing,
   }) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontWeight ?? FontWeight.w600,
       // Medium
       fontSize: 11,
@@ -899,7 +899,7 @@ class DefaultTextTheme {
   static TextStyle drawerItems(BuildContext context,
       {Color? color, FontWeight? fontweight, double? size}) {
     return TextStyle(
-      fontFamily: AppAssets.plusJakartaSans,
+      // fontFamily: AppAssets.plusJakartaSans,
       fontWeight: fontweight ?? FontWeight.w700,
       color: color ?? textBlack,
       fontSize: Responsive.isMobile(context) ? 10 : size ?? 9,

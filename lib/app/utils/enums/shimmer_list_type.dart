@@ -1,0 +1,4 @@
+enum ShimmerListType {
+  horizontal,
+  vertical,
+}

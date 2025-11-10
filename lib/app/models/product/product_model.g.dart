@@ -13,6 +13,7 @@ ProductModel _$ProductModelFromJson(Map<String, dynamic> json) => ProductModel(
   price: (json['price'] as num?)?.toDouble(),
   image: json['image'] as String?,
   fitType: json['fitType'] as String?,
+  isFavourite: json['isFavourite'] as bool?,
   sizes: (json['sizes'] as List<dynamic>?)?.map((e) => e as String).toList(),
   reviews: (json['reviews'] as List<dynamic>?)
       ?.map((e) => ReviewModel.fromJson(e as Map<String, dynamic>))
@@ -29,6 +30,7 @@ Map<String, dynamic> _$ProductModelToJson(ProductModel instance) =>
       'id': instance.id,
       'name': instance.name,
       'description': instance.description,
+      'isFavourite': instance.isFavourite,
       'price': instance.price,
       'image': instance.image,
       'fitType': instance.fitType,
