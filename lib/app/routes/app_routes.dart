@@ -8,7 +8,9 @@ abstract class Routes {
   static const navBar = '/navBar';
   static const home = '/home';
   static const search = '/navBar';
-  static const saved = '/navBar';
+  static const saved = '/saved';
   static const cart = '/navBar';
   static const profile = '/navBar';
+  static const notification = '/notification';
+  static const productDetail = '/productDetail';
 }

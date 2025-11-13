@@ -27,7 +27,7 @@ class LoginController extends GetxController {
     } else if (role == UserRole.seller) {
       Get.offAllNamed('/sellerDashboard');
     } else {
-      Get.offAllNamed(Routes.home);
+      Get.offAllNamed(Routes.navBar);
     }
   }
 }

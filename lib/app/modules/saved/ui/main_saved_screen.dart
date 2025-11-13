@@ -12,9 +12,14 @@ class MainSavedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final isMobile = Responsive.isMobile(context);
 
-    return Scaffold(
-      backgroundColor: white,
-      body: Column(children: [isMobile ? MobSavedScreen() : DeskSavedScreen()]),
+    return Scaffold(backgroundColor: white, body: _buildBody(context));
+  }
+
+  Widget _buildBody(BuildContext context) {
+    return Responsive(
+      mobile: MobSavedScreen(),
+      desktop: DeskSavedScreen(),
+      tablet: DeskSavedScreen(),
     );
   }
 }

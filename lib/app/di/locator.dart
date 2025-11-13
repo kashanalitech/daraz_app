@@ -1,3 +1,4 @@
+import 'package:daraz_app/app/modules/notification/repo/notification_repo.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -18,5 +19,6 @@ class Locator {
 
     // Register LoginScreenRepo as a singleton
     Get.put<HomeRepo>(HomeRepo(Get.find<NetworkApiServices>()), permanent: true);
+    Get.put<NotificationRepo>(NotificationRepo(Get.find<NetworkApiServices>()), permanent: true);
   }
 }

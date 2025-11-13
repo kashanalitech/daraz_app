@@ -10,6 +10,7 @@ import 'package:daraz_app/app/modules/cart/ui/main_cart_screen.dart';
 import 'package:daraz_app/app/modules/home/controller/home_controller.dart';
 import 'package:daraz_app/app/modules/home/ui/main_home_screen.dart';
 import 'package:daraz_app/app/modules/onboarding/ui/main_on_boarding_screen.dart';
+import 'package:daraz_app/app/modules/product/ui/main/main_product_detail_screen.dart';
 import 'package:daraz_app/app/modules/profile/controller/profile_controller.dart';
 import 'package:daraz_app/app/modules/saved/controller/saved_controller.dart';
 import 'package:daraz_app/app/modules/saved/ui/main_saved_screen.dart';
@@ -19,7 +20,10 @@ import 'package:get/get.dart';
 import '../modules/auth/controller/login_controller.dart';
 import '../modules/home_navbar/controller/navbar_controller.dart';
 import '../modules/home_navbar/ui/navbar_shell.dart';
+import '../modules/notification/controller/notification_controller.dart';
+import '../modules/notification/ui/main_notification_screen.dart';
 import '../modules/onboarding/controller/on_boarding_controller.dart';
+import '../modules/product/controller/product_controller.dart';
 import '../modules/profile/ui/main/main_profile_screen.dart';
 import '../modules/splash/controller/splash_controller.dart';
 import '../modules/splash/ui/main_splash_screen.dart';
@@ -82,7 +86,7 @@ class AppPages {
       page: () => const NavbarShell(),
       binding: BindingsBuilder(() {
         Get.put(NavBarController());
-        Get.put(HomeController()); // ✅ Add this line
+        // Get.put(HomeController()); // ✅ Add this line
 
       }),
     ),
@@ -90,40 +94,56 @@ class AppPages {
     GetPage(
       name: Routes.home,
       page: () => const MainHomeScreen(),
-      binding: BindingsBuilder(() {
-        Get.put(HomeController());
-      }),
+      // binding: BindingsBuilder(() {
+      //   Get.put(HomeController());
+      // }),
     ),
 
     GetPage(
       name: Routes.search,
       page: () => const MainSearchScreen(),
-      binding: BindingsBuilder(() {
-        Get.put(SearchController());
-      }),
+      // binding: BindingsBuilder(() {
+      //   Get.put(SearchController());
+      // }),
     ),
 
     GetPage(
       name: Routes.saved,
       page: () => const MainSavedScreen(),
-      binding: BindingsBuilder(() {
-        Get.put(SavedController());
-      }),
+      // binding: BindingsBuilder(() {
+      //   Get.put(SavedController());
+      // }),
     ),
 
     GetPage(
       name: Routes.cart,
       page: () => const MainCartScreen(),
-      binding: BindingsBuilder(() {
-        Get.put(CartController());
-      }),
+      // binding: BindingsBuilder(() {
+      //   Get.put(CartController());
+      // }),
     ),
 
     GetPage(
       name: Routes.profile,
       page: () => const MainProfileScreen (),
+      // binding: BindingsBuilder(() {
+      //   Get.put(ProfileController());
+      // }),
+    ),
+
+    GetPage(
+      name: Routes.notification,
+      page: () => const MainNotificationScreen (),
       binding: BindingsBuilder(() {
-        Get.put(ProfileController());
+        Get.put(NotificationController());
+      }),
+    ),
+
+    GetPage(
+      name: Routes.productDetail,
+      page: () => const MainProductDetailScreen (),
+      binding: BindingsBuilder(() {
+        Get.put(ProductController());
       }),
     ),
 

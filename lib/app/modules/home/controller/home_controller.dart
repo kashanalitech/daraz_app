@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 
 import '../../../data/repsonse/api_response.dart';
 import '../../../data/repsonse/status.dart';
+import '../../../routes/app_routes.dart';
+import '../../saved/controller/saved_controller.dart';
 import '../repo/home_repo.dart';
 
 class HomeController extends GetxController {
@@ -46,8 +48,6 @@ class HomeController extends GetxController {
 
     return allProducts.where((product) {
       // Filter out null products (shouldn't happen with proper API response)
-      if (product == null) return false;
-
       final productName = product.name?.toLowerCase() ?? '';
 
       if (category == "Tshirts") {
@@ -66,29 +66,30 @@ class HomeController extends GetxController {
     }).toList();
   }
 
+  /// ✅ Toggle favorite (purely local)
   void toggleProductFavorite(int productId) {
     final products = productsResponse.value.data ?? [];
-    final productIndex = products.indexWhere((p) => p?.id == productId);
-
-    if (productIndex != -1 && products[productIndex] != null) {
-      // Use the getter or handle null safely
-      final currentProduct = products[productIndex]!;
-
-      // Toggle the favorite status safely
-      if (currentProduct.isFavourite == null) {
-        currentProduct.isFavourite = true; // Set to true if null
-      } else {
-        currentProduct.isFavourite = !currentProduct.isFavourite!;
-      }
-
-      // Update the reactive list
+    final index = products.indexWhere((p) => p.id == productId);
+    if (index != -1) {
+      products[index].isFavourite = !(products[index].isFavourite ?? false);
       productsResponse.refresh();
     }
-  }
-  // Add method to change category
+  }  // Add method to change category
   void changeCategory(int index) {
     selectedCategoryIndex.value = index;
   }
+
+  void goToNotification() {
+    Get.toNamed(Routes.notification); // ✅ Navigate & clear history
+  }
+
+  void goToProductDetail(ProductModel product) {
+    Get.toNamed(
+      Routes.productDetail,
+      arguments: product,
+    );
+  }
+
 
   @override
   void onClose() {
